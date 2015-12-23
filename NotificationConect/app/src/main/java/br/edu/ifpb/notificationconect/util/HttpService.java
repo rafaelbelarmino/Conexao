@@ -41,7 +41,7 @@ public class HttpService {
     }
 
     public void sendJsonPostRequest() {
-
+  //?
     }
 
     public static String getHttpContent(HttpURLConnection connection) {
@@ -64,7 +64,7 @@ public class HttpService {
 
         } catch (IOException e) {
 
-            Log.e("NotificationWearApp", "IOException: " + e);
+            Log.e("Notificationconect", "IOException: " + e);
         }
 
         return builder.toString();

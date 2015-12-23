@@ -32,13 +32,13 @@ public class LoginAsyncTask extends AsyncTask<String, Void, HttpURLConnection>{
     @Override
     protected void onPreExecute() {
 
-        Log.i("NotificationWearApp", "OnPreExecute");
+        Log.i("Notificationconect", "OnPreExecute");
     }
 
     @Override
     protected HttpURLConnection doInBackground(String... valores) {
 
-        Log.i("NotificationWearApp", "doInBackground: " + valores[0]);
+        Log.i("Notificationconect", "doInBackground: " + valores[0]);
 
         HttpURLConnection connection = null;
 
@@ -48,11 +48,11 @@ public class LoginAsyncTask extends AsyncTask<String, Void, HttpURLConnection>{
 
         } catch (MalformedURLException ex) {
 
-            Log.e("NotificationWearApp","MalformedURLException");
+            Log.e("Notificationconect","MalformedURLException");
 
         } catch (IOException ex) {
 
-            Log.e("NotificationWearApp","MalformedURLException");
+            Log.e("Notificationconect","MalformedURLException");
         }
 
         return connection;
@@ -65,7 +65,7 @@ public class LoginAsyncTask extends AsyncTask<String, Void, HttpURLConnection>{
 
             int status = connection.getResponseCode();
 
-            Log.i("NotificationWearApp", "Status HTTP-Response: " + status);
+            Log.i("Notificationconect", "Status HTTP-Response: " + status);
 
             String contentValue = HttpService.getHttpContent(connection);
             JSONObject json = new JSONObject(contentValue);
@@ -79,7 +79,7 @@ public class LoginAsyncTask extends AsyncTask<String, Void, HttpURLConnection>{
 
         } catch (JSONException e) {
 
-            Log.e("NotificationWearApp", "JSONException");
+            Log.e("Notificationconect", "JSONException");
         }
     }
 }

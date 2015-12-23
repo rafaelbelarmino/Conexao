@@ -58,14 +58,14 @@ public class Logar extends Activity {
         notificacaoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i("NotificationWearApp", "Clique no botão da Notificação");
+                Log.i("Notificationconect", "Clique no botão da Notificação");
                 int notificationId = 001;
 
                 NotificationCompat.Builder notificationBuilder =
                         new NotificationCompat.Builder(MainActivity.this)
                                 .setSmallIcon(R.drawable.light)
                                 .setContentTitle("Title")
-                                .setContentText("Android Wear Notification");
+                                .setContentText("Android Notification");
 
                 NotificationManagerCompat notificationManager =
                         NotificationManagerCompat.from(MainActivity.this);
@@ -82,7 +82,7 @@ public class Logar extends Activity {
         asyncTaskButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i("NotificationWearApp", "Clique no botão da AsyncTask");
+                Log.i("Notificationconect", "Clique no botão da AsyncTask");
 
                 EditText nomeEditText = (EditText) findViewById(R.id.nomeEditText);
                 String nome = nomeEditText.getText().toString();
