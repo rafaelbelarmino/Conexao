@@ -1,4 +1,4 @@
-package br.edu.ifpb.notificationwear.util;
+package br.edu.ifpb.notificationconect.util;
 
 import android.util.Log;
 
@@ -10,13 +10,12 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-/**
- * Created by Rhavy on 14/12/2015.
- */
+
+
 public class HttpService {
 
-    // IP da máquina onde se encontra o servidor.
-    private static final String URL_CONTEXT = "http://192.168.1.178:8080/rest-servlet-service/";
+
+    private static final String URL_CONTEXT = "http://http://187.112.30.141//rest-servlet-service/";
 
     public static HttpURLConnection sendGetRequest(String service)
             throws MalformedURLException, IOException{

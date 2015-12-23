@@ -1,4 +1,4 @@
-package br.edu.ifpb.notificationwear.asynctask;
+package br.edu.ifpb.notificationconect.asynctask;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -19,9 +19,7 @@ import java.net.URL;
 import br.edu.ifpb.notificationwear.util.HttpService;
 import br.edu.ifpb.notificationwear.util.StringUtil;
 
-/**
- * Created by Rhavy on 01/12/2015.
- */
+
 public class LoginAsyncTask extends AsyncTask<String, Void, HttpURLConnection>{
 
     Context context;

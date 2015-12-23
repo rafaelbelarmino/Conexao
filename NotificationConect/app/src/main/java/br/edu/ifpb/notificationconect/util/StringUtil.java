@@ -1,8 +1,7 @@
-package br.edu.ifpb.notificationwear.util;
+package br.edu.ifpb.notificationconect.util;
 
-/**
- * Created by Rhavy on 17/12/2015.
- */
+
+
 public class StringUtil {
 
     public static final String VAZIO = "";
